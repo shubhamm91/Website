@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Page Title</title>
+        <link rel="stylesheet" href="css.css">
+        <script src="java.js"></script>
+        <script src="https://kit.fontawesome.com/be86d31a45.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+   
+
+      
+
+
+    <canvas id="canvas"></canvas>
+      <div class = "container">
+      <p>Thank YOu For Seeing This</p>
+        <div class="con">
+       <div class="h1"></div>
+       <div class="h2"></div>
+       </div>
+       <p>BY SHUBHAM ❤</p>
+
+       /* Please Type Your Name here
+          It will Reverse YOur Name */
+
+       <div class="reverse">
+        <input
+          type="text"
+          placeholder="enter text"
+          onkeyup="reverseString()"
+          id="input"
+          autocomplete="off"
+        />
+        <input type="text" placeholder="output" id="output" disabled />
+        <p>This Is Made By SHUBHAM</p>
+      </div>
+    </body>
+    <script>
+      function reverseString(str) {
+        let input = document.getElementById("input").value;
+        let output = document.getElementById("output");
+        let value = "";
+  
+        for (let i = input.length - 1; i >= 0; i--) {
+          value += input[i];
+        }
+        output.value = value;
+      }
+    </script>
+
+<div class="button">
+<button><a href="https://www.youtube.com/"> <i class="fa-brands fa-youtube"></i></a>  </button>
+<button><a href="https://www.google.com/"> <i class="fa-brands fa-google"></i></button>
+<button><a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram"></i></a>  </button>
+<button><a href="https://twitter.com/"> <i class="fa-brands fa-twitter"></i></a>  </button>
+<button><a href="https://in.linkedin.com/"> <i class="fa-brands fa-linkedin"></i></a>  </button>
+</div>
+
+    </body>
+</html>
